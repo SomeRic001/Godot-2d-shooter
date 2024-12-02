@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://c35rn2pjgmjpj"]
+
+[ext_resource type="Script" path="res://Scenes/laser.gd" id="1_3e73a"]
+[ext_resource type="Texture2D" uid="uid://citpwm3737ffl" path="res://Sprites/Bullet/laser-bolts.png" id="1_qw8et"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_et3fa"]
+radius = 8.0
+
+[node name="laser" type="Area2D"]
+collision_layer = 8
+collision_mask = 2
+script = ExtResource("1_3e73a")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-2, 11)
+scale = Vector2(3, 3)
+texture = ExtResource("1_qw8et")
+hframes = 2
+vframes = 2
+frame = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_et3fa")

@@ -1,0 +1,205 @@
+[gd_scene load_steps=31 format=3 uid="uid://cd2gavdiph4nk"]
+
+[ext_resource type="Script" path="res://Scenes/level.gd" id="1_6ltts"]
+[ext_resource type="Texture2D" uid="uid://dfrxi0nn6dfbf" path="res://Sprites/Backgrounds/Desert/desert-backgorund.png" id="1_ylhkx"]
+[ext_resource type="PackedScene" uid="uid://csx85xllmukgl" path="res://Scenes/Player.tscn" id="3_0e244"]
+[ext_resource type="Texture2D" uid="uid://dwoqdliidvdf0" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/cloud1.png" id="4_ttgtj"]
+[ext_resource type="Texture2D" uid="uid://7k0yk3ftj7b3" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/clouds2.png" id="5_y1b60"]
+[ext_resource type="Texture2D" uid="uid://nbxgi2rsny8y" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/clouds3.png" id="6_ada6u"]
+[ext_resource type="Texture2D" uid="uid://c8i5ybxxecmem" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/clouds4.png" id="7_kd8iy"]
+[ext_resource type="Texture2D" uid="uid://bptick3xhj118" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/clouds5.png" id="8_hmevu"]
+[ext_resource type="Texture2D" uid="uid://bing2n5uxeqvw" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/clouds6.png" id="9_18hlj"]
+[ext_resource type="Texture2D" uid="uid://boby3ecf44qbo" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/clouds7.png" id="10_6a3dh"]
+[ext_resource type="Texture2D" uid="uid://b3hnoc5roytiw" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/clouds8.png" id="11_cmd3j"]
+[ext_resource type="Texture2D" uid="uid://b6fme8nshics3" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/clouds9.png" id="12_bpwfr"]
+[ext_resource type="Texture2D" uid="uid://c5rot5fcno273" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/clouds10.png" id="13_g7xia"]
+[ext_resource type="Texture2D" uid="uid://csqbp2p2k477v" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/clouds11.png" id="14_m3pil"]
+[ext_resource type="Texture2D" uid="uid://xlsaexkajd8q" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/clouds12.png" id="15_4patr"]
+[ext_resource type="Texture2D" uid="uid://b5voa52gnk5xw" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/clouds13.png" id="16_qorql"]
+[ext_resource type="Texture2D" uid="uid://xg0b22weofme" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/clouds14.png" id="17_bkij1"]
+[ext_resource type="Texture2D" uid="uid://dkwx83d81urqs" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/clouds15.png" id="18_52oil"]
+[ext_resource type="Texture2D" uid="uid://7636qviwgtpo" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/clouds16.png" id="19_6jvt0"]
+[ext_resource type="Texture2D" uid="uid://pmfj4i37ml8k" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/clouds17.png" id="20_b1ykg"]
+[ext_resource type="Texture2D" uid="uid://bb6ddg3i15vpw" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/clouds18.png" id="21_hrf17"]
+[ext_resource type="Texture2D" uid="uid://c2nvlmjooohk7" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/clouds19.png" id="22_yleqs"]
+[ext_resource type="Texture2D" uid="uid://b54dq1xnhteyh" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/clouds20.png" id="23_dpkxq"]
+[ext_resource type="Texture2D" uid="uid://c1nxeppvoscuf" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/clouds21.png" id="24_1w0eg"]
+[ext_resource type="Texture2D" uid="uid://xocyxpuucjyt" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/clouds22.png" id="25_yv3q7"]
+[ext_resource type="Texture2D" uid="uid://bnf6puyd5cwf2" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/clouds23.png" id="26_5x4q4"]
+[ext_resource type="Texture2D" uid="uid://b0hdyse8m467l" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/clouds 24.png" id="27_bhj30"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_elmby"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_ttgtj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_y1b60")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ada6u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_kd8iy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_hmevu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_18hlj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_6a3dh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_cmd3j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_bpwfr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_g7xia")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_m3pil")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_4patr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_qorql")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_bkij1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_52oil")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_6jvt0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_b1ykg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_hrf17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_yleqs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_dpkxq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_1w0eg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_yv3q7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_5x4q4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_bhj30")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3lvs3"]
+size = Vector2(6, 724)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qvpec"]
+size = Vector2(6.00011, 1288)
+
+[node name="Level" type="Node2D"]
+position = Vector2(-1, 0)
+script = ExtResource("1_6ltts")
+
+[node name="Bg" type="Sprite2D" parent="."]
+position = Vector2(641.5, 361.891)
+scale = Vector2(4.99609, 2.66256)
+texture = ExtResource("1_ylhkx")
+
+[node name="Laser" type="Node2D" parent="."]
+
+[node name="Player" parent="." instance=ExtResource("3_0e244")]
+position = Vector2(576, 599)
+scale = Vector2(2.91329, 3.2071)
+
+[node name="Enemies" type="Node2D" parent="."]
+
+[node name="Clouds" type="Node2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Clouds"]
+position = Vector2(131, 214)
+rotation = -0.000602677
+sprite_frames = SubResource("SpriteFrames_elmby")
+autoplay = "default"
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Clouds"]
+position = Vector2(387, 214.5)
+rotation = -3.14159
+sprite_frames = SubResource("SpriteFrames_elmby")
+autoplay = "default"
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="Clouds"]
+position = Vector2(643, 211)
+sprite_frames = SubResource("SpriteFrames_elmby")
+autoplay = "default"
+
+[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="Clouds"]
+position = Vector2(899, 207)
+rotation = -3.14159
+sprite_frames = SubResource("SpriteFrames_elmby")
+autoplay = "default"
+frame_progress = 0.122588
+
+[node name="AnimatedSprite2D5" type="AnimatedSprite2D" parent="Clouds"]
+position = Vector2(1155, 200)
+sprite_frames = SubResource("SpriteFrames_elmby")
+autoplay = "default"
+frame_progress = 0.122588
+
+[node name="Borders" type="Node2D" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Borders"]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBody2D"]
+position = Vector2(1278, 363)
+shape = SubResource("RectangleShape2D_3lvs3")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Borders"]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBody2D2"]
+position = Vector2(1, 359)
+shape = SubResource("RectangleShape2D_3lvs3")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Borders"]
+position = Vector2(47, 0)
+rotation = -1.57079
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBody2D3"]
+position = Vector2(-5.99868, 595)
+shape = SubResource("RectangleShape2D_qvpec")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="Borders"]
+position = Vector2(47, 0)
+rotation = -1.57079
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBody2D4"]
+position = Vector2(-720.999, 591.002)
+shape = SubResource("RectangleShape2D_qvpec")
+
+[node name="Enemy Timer" type="Timer" parent="."]
+wait_time = 0.2
+autostart = true
+
+[connection signal="laser" from="Player" to="." method="_on_player_laser"]
+[connection signal="timeout" from="Enemy Timer" to="." method="_on_enemy_timer_timeout"]

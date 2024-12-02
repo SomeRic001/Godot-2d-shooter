@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://wm4kqvbeskyx"]
+
+[ext_resource type="Script" path="res://Scenes/enemies.gd" id="1_u2puq"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7vymr"]
+radius = 9.0
+height = 26.0
+
+[node name="Meteor" type="Area2D"]
+collision_layer = 2
+collision_mask = 9
+script = ExtResource("1_u2puq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 16)
+rotation = 1.57079
+scale = Vector2(2, 2)
+shape = SubResource("CapsuleShape2D_7vymr")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+hframes = 2
+frame = 1
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
