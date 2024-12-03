@@ -1,0 +1,171 @@
+[gd_scene load_steps=27 format=3 uid="uid://bjfm3kpsvuout"]
+
+[ext_resource type="Script" path="res://Scenes/game_over.gd" id="1_3dfy7"]
+[ext_resource type="FontFile" uid="uid://da5cpkw0e7xpi" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/Megamax.ttf" id="1_smxqt"]
+[ext_resource type="Texture2D" uid="uid://c1mvhcelbrp6n" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/P1.png" id="2_pfatg"]
+[ext_resource type="Texture2D" uid="uid://cpvadkmeb2b5a" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/P2.png" id="3_kjlek"]
+[ext_resource type="Texture2D" uid="uid://c7yrbif2gm57j" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/P3.png" id="4_cpdgw"]
+[ext_resource type="Texture2D" uid="uid://cu776d54avx8n" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/P4.png" id="5_ilvx1"]
+[ext_resource type="Texture2D" uid="uid://bdx1cl63ysevt" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/p5.png" id="6_yxsbc"]
+[ext_resource type="Texture2D" uid="uid://b24pfxt6q452" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/P6.png" id="7_pmtxu"]
+[ext_resource type="Texture2D" uid="uid://cmpgaf5iuaflq" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/P7.png" id="8_8y6bv"]
+[ext_resource type="Texture2D" uid="uid://dsweyjf1jm4to" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/P8.png" id="9_to8jn"]
+[ext_resource type="Texture2D" uid="uid://bfynuxwluml8r" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/P9.png" id="10_3tk4p"]
+[ext_resource type="Texture2D" uid="uid://caodlj1kn5ntc" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/P10.png" id="11_no458"]
+[ext_resource type="Texture2D" uid="uid://dgvqvv05nheul" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/p11.png" id="12_p50sh"]
+[ext_resource type="Texture2D" uid="uid://dq8lk5i6p1ybv" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/p12.png" id="13_p73dq"]
+[ext_resource type="Texture2D" uid="uid://tbvvccs3evfx" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/P13.png" id="14_vn5i6"]
+[ext_resource type="Texture2D" uid="uid://dtf162bhpaga0" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/P14.png" id="15_uq2bw"]
+[ext_resource type="Texture2D" uid="uid://cfr430v5ok6xs" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/P15.png" id="16_47lk8"]
+[ext_resource type="Texture2D" uid="uid://rfk3756ajt1i" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/P16.png" id="17_k1en3"]
+[ext_resource type="Texture2D" uid="uid://c3ulanlnfb0sd" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/P17.png" id="18_8171n"]
+[ext_resource type="Texture2D" uid="uid://5nlc3epi6jf7" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/P18.png" id="19_qgfnl"]
+[ext_resource type="Texture2D" uid="uid://dn63kkfjnmtyp" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/P19.png" id="20_yxg5q"]
+[ext_resource type="Texture2D" uid="uid://bybgdujvorksk" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/P20.png" id="21_lq6rn"]
+[ext_resource type="Texture2D" uid="uid://bpvbqocr8rjgq" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/P21.png" id="22_gt2i3"]
+[ext_resource type="Texture2D" uid="uid://bqdlcn182i0a3" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/P22.png" id="23_5xc7x"]
+[ext_resource type="Texture2D" uid="uid://uuqcyo0gp7ny" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/P23.png" id="24_pj2to"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ylctg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_pfatg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_kjlek")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_cpdgw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ilvx1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_yxsbc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_pmtxu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_8y6bv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_to8jn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_3tk4p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_no458")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_p50sh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_p73dq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_vn5i6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_uq2bw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_47lk8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_k1en3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_8171n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_qgfnl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_yxg5q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_lq6rn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_gt2i3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_5xc7x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_pj2to")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[node name="Game Over" type="CanvasLayer"]
+script = ExtResource("1_3dfy7")
+
+[node name="BG" type="ColorRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(31.9487, 18.0173)
+color = Color(0.227451, 0.180392, 0.247059, 1)
+metadata/_edit_lock_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(673, 684)
+scale = Vector2(0.8, 0.8)
+sprite_frames = SubResource("SpriteFrames_ylctg")
+autoplay = "default"
+
+[node name="Game OVer" type="MarginContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -225.5
+offset_top = -40.0
+offset_right = 225.5
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = -2
+theme_override_constants/margin_bottom = 10
+
+[node name="Label" type="Label" parent="Game OVer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.776471, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.870057, 0.302726, 0.816633, 1)
+theme_override_colors/font_outline_color = Color(0.69627, 0.133318, 0.294836, 1)
+theme_override_fonts/font = ExtResource("1_smxqt")
+theme_override_font_sizes/font_size = 69
+text = "GAME OVER"
+uppercase = true
+
+[node name="score" type="MarginContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -141.5
+offset_top = -50.0
+offset_right = 141.5
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_top = 70
+
+[node name="Label" type="Label" parent="score"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_smxqt")
+theme_override_font_sizes/font_size = 30
+text = "your score: 0"
+uppercase = true
