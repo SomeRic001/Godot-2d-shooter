@@ -1,0 +1,72 @@
+[gd_scene load_steps=5 format=3 uid="uid://drglwyfbenkln"]
+
+[ext_resource type="AudioStream" uid="uid://dgfa8xyxfd1t7" path="res://Music/MainMenu.wav" id="1_7yusb"]
+[ext_resource type="Script" path="res://Scenes/Menu.gd" id="1_52ihr"]
+[ext_resource type="PackedScene" uid="uid://cd2gavdiph4nk" path="res://Scenes/level.tscn" id="2_1i3x5"]
+[ext_resource type="FontFile" uid="uid://da5cpkw0e7xpi" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/Megamax.ttf" id="2_2cneq"]
+
+[node name="Node2D" type="CanvasLayer"]
+script = ExtResource("1_52ihr")
+level_scn = ExtResource("2_1i3x5")
+
+[node name="MainMenu" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_7yusb")
+autoplay = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+texture_filter = 2
+texture_repeat = 2
+offset_right = 1280.0
+offset_bottom = 720.0
+scale = Vector2(1, 1.00576)
+color = Color(0.227451, 0.180392, 0.247059, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = -1
+anchor_left = 0.49375
+anchor_top = 0.147222
+anchor_right = 0.49375
+anchor_bottom = 0.147222
+offset_left = -363.0
+offset_top = 51.0
+offset_right = 364.0
+offset_bottom = 152.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="MarginContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_2cneq")
+theme_override_font_sizes/font_size = 100
+text = "2d Shooter"
+
+[node name="MarginContainer2" type="MarginContainer" parent="."]
+offset_left = 554.0
+offset_top = 369.0
+offset_right = 707.0
+offset_bottom = 470.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer2"]
+layout_mode = 2
+
+[node name="Playe" type="Button" parent="MarginContainer2/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_disabled_color = Color(0, 0.878431, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.0528863, 0.583539, 0.788842, 1)
+theme_override_colors/font_hover_color = Color(0.0701451, 0.307947, 1, 1)
+theme_override_fonts/font = ExtResource("2_2cneq")
+theme_override_font_sizes/font_size = 50
+text = "play"
+
+[node name="Exit" type="Button" parent="MarginContainer2/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.807843, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_2cneq")
+theme_override_font_sizes/font_size = 30
+text = "EXIT"
+
+[connection signal="pressed" from="MarginContainer2/VBoxContainer/Playe" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MarginContainer2/VBoxContainer/Exit" to="." method="_on_exit_pressed"]

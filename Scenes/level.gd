@@ -23,6 +23,7 @@ func _on_enemy_collision():
 func _ready():
 	get_tree().call_group("UI","_sethealth",health)
 	
+	
 	 
 func _on_player_laser(pos):
 	var laser = laser_scene.instantiate()

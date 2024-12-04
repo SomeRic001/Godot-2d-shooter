@@ -19,6 +19,7 @@ func _process(_delta):
 		laser.emit($LaserStartingPosition.global_position)
 		can_shoot = false
 		$LaserTimer.start()
+		$GameMusic.play()
 
 
 func _on_laser_timer_timeout():

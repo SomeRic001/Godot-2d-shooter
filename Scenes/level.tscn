@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://cd2gavdiph4nk"]
+[gd_scene load_steps=33 format=3 uid="uid://cd2gavdiph4nk"]
 
 [ext_resource type="Script" path="res://Scenes/level.gd" id="1_6ltts"]
 [ext_resource type="Texture2D" uid="uid://dfrxi0nn6dfbf" path="res://Sprites/Backgrounds/Desert/desert-backgorund.png" id="1_ylhkx"]
@@ -28,6 +28,7 @@
 [ext_resource type="Texture2D" uid="uid://bnf6puyd5cwf2" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/clouds23.png" id="26_5x4q4"]
 [ext_resource type="Texture2D" uid="uid://b0hdyse8m467l" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/clouds 24.png" id="27_bhj30"]
 [ext_resource type="PackedScene" uid="uid://bs21i7kfp43y2" path="res://Scenes/UI.tscn" id="28_qxn34"]
+[ext_resource type="AudioStream" uid="uid://cbhwfj02kukm0" path="res://Music/spaceship shooter .ogg" id="29_q16gx"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_elmby"]
 animations = [{
@@ -118,6 +119,11 @@ size = Vector2(6.00011, 1288)
 [node name="Level" type="Node2D"]
 position = Vector2(-1, 0)
 script = ExtResource("1_6ltts")
+
+[node name="Game" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("29_q16gx")
+volume_db = -14.604
+autoplay = true
 
 [node name="Bg" type="Sprite2D" parent="."]
 position = Vector2(641.5, 361.891)

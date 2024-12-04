@@ -24,5 +24,12 @@ func _process(delta):
 	position+= Vector2(direction_x,1)*speed*delta
 	rotation_degrees += rot_speed *delta
 	
-func _on_body_entered(body):
+func _on_body_entered(_body):
 	collision.emit() 
+
+
+func _on_area_entered(area):
+	Global.score+=1
+	area.queue_free()
+	queue_free()
+	

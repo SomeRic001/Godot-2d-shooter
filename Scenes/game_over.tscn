@@ -1,7 +1,8 @@
-[gd_scene load_steps=27 format=3 uid="uid://bjfm3kpsvuout"]
+[gd_scene load_steps=29 format=3 uid="uid://bjfm3kpsvuout"]
 
 [ext_resource type="Script" path="res://Scenes/game_over.gd" id="1_3dfy7"]
 [ext_resource type="FontFile" uid="uid://da5cpkw0e7xpi" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/Megamax.ttf" id="1_smxqt"]
+[ext_resource type="PackedScene" uid="uid://cd2gavdiph4nk" path="res://Scenes/level.tscn" id="2_74b31"]
 [ext_resource type="Texture2D" uid="uid://c1mvhcelbrp6n" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/P1.png" id="2_pfatg"]
 [ext_resource type="Texture2D" uid="uid://cpvadkmeb2b5a" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/P2.png" id="3_kjlek"]
 [ext_resource type="Texture2D" uid="uid://c7yrbif2gm57j" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/P3.png" id="4_cpdgw"]
@@ -25,6 +26,7 @@
 [ext_resource type="Texture2D" uid="uid://bpvbqocr8rjgq" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/P21.png" id="22_gt2i3"]
 [ext_resource type="Texture2D" uid="uid://bqdlcn182i0a3" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/P22.png" id="23_5xc7x"]
 [ext_resource type="Texture2D" uid="uid://uuqcyo0gp7ny" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/P23.png" id="24_pj2to"]
+[ext_resource type="AudioStream" uid="uid://ce1rl8c755heq" path="res://Music/gameover.wav" id="27_t050u"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ylctg"]
 animations = [{
@@ -108,8 +110,9 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Game Over" type="CanvasLayer"]
+[node name="GameOver" type="CanvasLayer"]
 script = ExtResource("1_3dfy7")
+level_scn = ExtResource("2_74b31")
 
 [node name="BG" type="ColorRect" parent="."]
 offset_right = 40.0
@@ -167,5 +170,9 @@ theme_override_constants/margin_top = 70
 layout_mode = 2
 theme_override_fonts/font = ExtResource("1_smxqt")
 theme_override_font_sizes/font_size = 30
-text = "your score: 0"
+text = "your score: "
 uppercase = true
+
+[node name="Gameover" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("27_t050u")
+autoplay = true
