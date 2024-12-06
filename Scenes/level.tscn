@@ -117,7 +117,6 @@ size = Vector2(6, 724)
 size = Vector2(6.00011, 1288)
 
 [node name="Level" type="Node2D"]
-position = Vector2(-1, 0)
 script = ExtResource("1_6ltts")
 
 [node name="Game" type="AudioStreamPlayer2D" parent="."]
@@ -129,7 +128,6 @@ autoplay = true
 position = Vector2(641.5, 361.891)
 scale = Vector2(4.99609, 2.66256)
 texture = ExtResource("1_ylhkx")
-metadata/_edit_lock_ = true
 
 [node name="Laser" type="Node2D" parent="."]
 
@@ -143,31 +141,31 @@ scale = Vector2(2.91329, 3.2071)
 metadata/_edit_lock_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Clouds"]
-position = Vector2(131, 214)
+position = Vector2(131, 215)
 rotation = -0.000602677
 sprite_frames = SubResource("SpriteFrames_elmby")
 autoplay = "default"
 
-[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Clouds"]
-position = Vector2(387, 214.5)
-rotation = -3.14159
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="Clouds"]
+position = Vector2(643, 206)
 sprite_frames = SubResource("SpriteFrames_elmby")
 autoplay = "default"
 
-[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="Clouds"]
-position = Vector2(643, 211)
+[node name="AnimatedSprite2D6" type="AnimatedSprite2D" parent="Clouds"]
+position = Vector2(387, 213)
+rotation = 3.14159
 sprite_frames = SubResource("SpriteFrames_elmby")
 autoplay = "default"
 
 [node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="Clouds"]
-position = Vector2(899, 207)
+position = Vector2(899, 202)
 rotation = -3.14159
 sprite_frames = SubResource("SpriteFrames_elmby")
 autoplay = "default"
 frame_progress = 0.122588
 
 [node name="AnimatedSprite2D5" type="AnimatedSprite2D" parent="Clouds"]
-position = Vector2(1155, 200)
+position = Vector2(1155, 195)
 sprite_frames = SubResource("SpriteFrames_elmby")
 autoplay = "default"
 frame_progress = 0.122588

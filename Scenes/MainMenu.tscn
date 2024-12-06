@@ -58,7 +58,7 @@ theme_override_colors/font_disabled_color = Color(0, 0.878431, 0, 1)
 theme_override_colors/font_hover_pressed_color = Color(0.0528863, 0.583539, 0.788842, 1)
 theme_override_colors/font_hover_color = Color(0.0701451, 0.307947, 1, 1)
 theme_override_fonts/font = ExtResource("2_2cneq")
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 40
 text = "play"
 
 [node name="Exit" type="Button" parent="MarginContainer2/VBoxContainer"]
