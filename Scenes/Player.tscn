@@ -23,7 +23,7 @@ position = Vector2(0, -17)
 gizmo_extents = 1000.0
 
 [node name="LaserTimer" type="Timer" parent="."]
-wait_time = 0.1
+wait_time = 0.3
 
 [node name="GameMusic" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_b42k3")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://cd2gavdiph4nk"]
+[gd_scene load_steps=35 format=3 uid="uid://cd2gavdiph4nk"]
 
 [ext_resource type="Script" path="res://Scenes/level.gd" id="1_6ltts"]
 [ext_resource type="Texture2D" uid="uid://dfrxi0nn6dfbf" path="res://Sprites/Backgrounds/Desert/desert-backgorund.png" id="1_ylhkx"]
@@ -28,7 +28,9 @@
 [ext_resource type="Texture2D" uid="uid://bnf6puyd5cwf2" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/clouds23.png" id="26_5x4q4"]
 [ext_resource type="Texture2D" uid="uid://b0hdyse8m467l" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/clouds 24.png" id="27_bhj30"]
 [ext_resource type="PackedScene" uid="uid://bs21i7kfp43y2" path="res://Scenes/UI.tscn" id="28_qxn34"]
+[ext_resource type="PackedScene" uid="uid://cf43jjwyda5f2" path="res://Scenes/pause_menu.tscn" id="29_kvdji"]
 [ext_resource type="AudioStream" uid="uid://cbhwfj02kukm0" path="res://Music/spaceship shooter .ogg" id="29_q16gx"]
+[ext_resource type="AudioStream" uid="uid://okaxa4s3gvjx" path="res://Music/PauseSound.wav" id="31_gdlnt"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_elmby"]
 animations = [{
@@ -141,7 +143,7 @@ scale = Vector2(2.91329, 3.2071)
 metadata/_edit_lock_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Clouds"]
-position = Vector2(131, 215)
+position = Vector2(131, 216)
 rotation = -0.000602677
 sprite_frames = SubResource("SpriteFrames_elmby")
 autoplay = "default"
@@ -209,11 +211,21 @@ metadata/_edit_lock_ = true
 position = Vector2(-720.999, 591.002)
 shape = SubResource("RectangleShape2D_qvpec")
 
+[node name="UI" parent="." instance=ExtResource("28_qxn34")]
+
 [node name="Enemy Timer" type="Timer" parent="."]
 wait_time = 0.2
 autostart = true
 
-[node name="UI" parent="." instance=ExtResource("28_qxn34")]
+[node name="Pause Menu" parent="." instance=ExtResource("29_kvdji")]
+offset_left = 515.0
+offset_top = 258.0
+offset_right = 515.0
+offset_bottom = 258.0
+
+[node name="PauseSong" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("31_gdlnt")
+volume_db = 7.924
 
 [connection signal="laser" from="Player" to="." method="_on_player_laser"]
 [connection signal="timeout" from="Enemy Timer" to="." method="_on_enemy_timer_timeout"]

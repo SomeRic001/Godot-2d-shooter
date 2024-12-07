@@ -1,10 +1,25 @@
 extends Node2D
+@onready var pause_menu = $"Pause Menu"
+var paused = false
 #load scene
 var enemy_scene: PackedScene = load("res://Scenes/meteor.tscn")
 var laser_scene: PackedScene = load("res://Scenes/laser.tscn")
-var health: int = 5
+var health: int = 3
 
-
+func _process(delta):
+	if Input.is_action_just_pressed("pause"):
+		pauseMenu()
+func pauseMenu():
+	$PauseSong.play()
+	if paused:
+		pause_menu.hide()
+		Engine.time_scale = 1.0
+	else:
+		pause_menu.show()
+		Engine.time_scale = 0
+	
+	paused = !paused
+	
 func _on_enemy_timer_timeout():
 	if get_tree().paused:
 		return
@@ -27,7 +42,7 @@ func _on_enemy_collision():
 
 func _ready():
 	get_tree().call_group("UI","_sethealth",health)
-	get_tree().paused = false
+	pause_menu.hide()
 	 
 func _on_player_laser(pos):
 	var laser = laser_scene.instantiate()

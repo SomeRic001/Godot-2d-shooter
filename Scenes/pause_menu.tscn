@@ -1,0 +1,58 @@
+[gd_scene load_steps=5 format=3 uid="uid://cf43jjwyda5f2"]
+
+[ext_resource type="FontFile" uid="uid://da5cpkw0e7xpi" path="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/Megamax.ttf" id="1_3mvk3"]
+[ext_resource type="Script" path="res://Scenes/pause_menu.gd" id="1_o5431"]
+[ext_resource type="Shader" path="res://Scenes/pause_menu.gdshader" id="2_fk1om"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vn77d"]
+shader = ExtResource("2_fk1om")
+shader_parameter/amount = 1.0
+
+[node name="Pause Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_o5431")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_vn77d")
+layout_mode = 0
+offset_left = -575.0
+offset_top = -411.0
+offset_right = 1405.0
+offset_bottom = 934.0
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Resume" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_3mvk3")
+theme_override_font_sizes/font_size = 50
+text = "RESUME"
+
+[node name="Restart" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_3mvk3")
+theme_override_font_sizes/font_size = 50
+text = "Restart"
+
+[node name="Menu" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_3mvk3")
+theme_override_font_sizes/font_size = 50
+text = "MENU"
+
+[node name="Exit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_3mvk3")
+theme_override_font_sizes/font_size = 50
+text = "EXIT"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Menu" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Exit" to="." method="_on_exit_pressed"]
