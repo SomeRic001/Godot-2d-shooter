@@ -41,6 +41,7 @@ func _on_enemy_collision():
 
 
 func _ready():
+	Global.score = 0
 	get_tree().call_group("UI","_sethealth",health)
 	pause_menu.hide()
 	 
