@@ -4,7 +4,7 @@ var paused = false
 #load scene
 var enemy_scene: PackedScene = load("res://Scenes/meteor.tscn")
 var laser_scene: PackedScene = load("res://Scenes/laser.tscn")
-var health: int = 3
+var health: int = 5
 
 func _process(delta):
 	if Input.is_action_just_pressed("pause"):
@@ -33,7 +33,7 @@ func _on_enemy_timer_timeout():
 
 func _on_enemy_collision():
 	health-=1
-	Input.start_joy_vibration(0,0.5,1,0.3)
+	Input.start_joy_vibration(0,1,1,0.5)
 	get_tree().call_group("UI","_sethealth",health)
 	if health<=0:
 		get_tree().change_scene_to_file("res://Scenes/game_over.tscn")
