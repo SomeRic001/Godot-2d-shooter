@@ -13,6 +13,8 @@ config_version=5
 config/name="NewGameProject"
 run/main_scene="res://Scenes/MainMenu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/image="res://Sprites/Backgrounds/Backgrounds/PNGs/Condesed/Starry background  - Layer 03 - Stars.png"
 config/icon="res://Sprites/Player/ship.png"
 
 [autoload]
@@ -76,3 +78,7 @@ pause={
 2d_physics/layer_2="Enemy"
 2d_physics/layer_3="Walls"
 2d_physics/layer_4="Laser"
+
+[rendering]
+
+anti_aliasing/quality/msaa_2d=3
